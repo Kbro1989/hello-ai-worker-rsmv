@@ -1,0 +1,382 @@
+export default {
+  "0x6a": {
+    "name": "magic",
+    "read": "uint"
+  },
+  "0x00": {
+    "name": "level0",
+    "read": [
+      "array",
+      4356,
+      [
+        "struct",
+        [
+          "flags",
+          "ubyte"
+        ],
+        [
+          "height",
+          [
+            "match",
+            "buildnr",
+            {
+              ">=936": "ushort",
+              "other": "ubyte"
+            }
+          ]
+        ],
+        [
+          "rest",
+          [
+            "opt",
+            [
+              "flags",
+              0,
+              "bitflag"
+            ],
+            [
+              "struct",
+              [
+                "waterheight",
+                [
+                  "opt",
+                  "flags&16",
+                  [
+                    "match",
+                    "buildnr",
+                    {
+                      ">=936": "ushort",
+                      "other": "ubyte"
+                    }
+                  ]
+                ]
+              ],
+              [
+                "underlay",
+                "varushort"
+              ],
+              [
+                "underlaycolor",
+                [
+                  "opt",
+                  "underlay!=0",
+                  "ushort"
+                ]
+              ],
+              [
+                "overlay",
+                "varushort"
+              ],
+              [
+                "overlay_under",
+                [
+                  "opt",
+                  "flags&16",
+                  "varushort"
+                ]
+              ],
+              [
+                "shape",
+                [
+                  "opt",
+                  "overlay!=0",
+                  "ubyte"
+                ]
+              ],
+              [
+                "underlay_under",
+                [
+                  "opt",
+                  "overlay!=0 && flags&16",
+                  "varushort"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "0x01": {
+    "name": "level1",
+    "read": [
+      "array",
+      4356,
+      [
+        "struct",
+        [
+          "flags",
+          "ubyte"
+        ],
+        [
+          "height",
+          [
+            "match",
+            "buildnr",
+            {
+              ">=936": "ushort",
+              "other": "ubyte"
+            }
+          ]
+        ],
+        [
+          "rest",
+          [
+            "opt",
+            [
+              "flags",
+              0,
+              "bitflag"
+            ],
+            [
+              "struct",
+              [
+                "waterheight",
+                [
+                  "opt",
+                  "flags&16",
+                  [
+                    "match",
+                    "buildnr",
+                    {
+                      ">=936": "ushort",
+                      "other": "ubyte"
+                    }
+                  ]
+                ]
+              ],
+              [
+                "underlay",
+                "varushort"
+              ],
+              [
+                "underlaycolor",
+                [
+                  "opt",
+                  "underlay!=0",
+                  "ushort"
+                ]
+              ],
+              [
+                "overlay",
+                "varushort"
+              ],
+              [
+                "overlay_under",
+                [
+                  "opt",
+                  "flags&16",
+                  "varushort"
+                ]
+              ],
+              [
+                "shape",
+                [
+                  "opt",
+                  "overlay!=0",
+                  "ubyte"
+                ]
+              ],
+              [
+                "underlay_under",
+                [
+                  "opt",
+                  "overlay!=0 && flags&16",
+                  "varushort"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "0x02": {
+    "name": "level2",
+    "read": [
+      "array",
+      4356,
+      [
+        "struct",
+        [
+          "flags",
+          "ubyte"
+        ],
+        [
+          "height",
+          [
+            "match",
+            "buildnr",
+            {
+              ">=936": "ushort",
+              "other": "ubyte"
+            }
+          ]
+        ],
+        [
+          "rest",
+          [
+            "opt",
+            [
+              "flags",
+              0,
+              "bitflag"
+            ],
+            [
+              "struct",
+              [
+                "waterheight",
+                [
+                  "opt",
+                  "flags&16",
+                  [
+                    "match",
+                    "buildnr",
+                    {
+                      ">=936": "ushort",
+                      "other": "ubyte"
+                    }
+                  ]
+                ]
+              ],
+              [
+                "underlay",
+                "varushort"
+              ],
+              [
+                "underlaycolor",
+                [
+                  "opt",
+                  "underlay!=0",
+                  "ushort"
+                ]
+              ],
+              [
+                "overlay",
+                "varushort"
+              ],
+              [
+                "overlay_under",
+                [
+                  "opt",
+                  "flags&16",
+                  "varushort"
+                ]
+              ],
+              [
+                "shape",
+                [
+                  "opt",
+                  "overlay!=0",
+                  "ubyte"
+                ]
+              ],
+              [
+                "underlay_under",
+                [
+                  "opt",
+                  "overlay!=0 && flags&16",
+                  "varushort"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "0x03": {
+    "name": "level3",
+    "read": [
+      "array",
+      4356,
+      [
+        "struct",
+        [
+          "flags",
+          "ubyte"
+        ],
+        [
+          "height",
+          [
+            "match",
+            "buildnr",
+            {
+              ">=936": "ushort",
+              "other": "ubyte"
+            }
+          ]
+        ],
+        [
+          "rest",
+          [
+            "opt",
+            [
+              "flags",
+              0,
+              "bitflag"
+            ],
+            [
+              "struct",
+              [
+                "waterheight",
+                [
+                  "opt",
+                  "flags&16",
+                  [
+                    "match",
+                    "buildnr",
+                    {
+                      ">=936": "ushort",
+                      "other": "ubyte"
+                    }
+                  ]
+                ]
+              ],
+              [
+                "underlay",
+                "varushort"
+              ],
+              [
+                "underlaycolor",
+                [
+                  "opt",
+                  "underlay!=0",
+                  "ushort"
+                ]
+              ],
+              [
+                "overlay",
+                "varushort"
+              ],
+              [
+                "overlay_under",
+                [
+                  "opt",
+                  "flags&16",
+                  "varushort"
+                ]
+              ],
+              [
+                "shape",
+                [
+                  "opt",
+                  "overlay!=0",
+                  "ubyte"
+                ]
+              ],
+              [
+                "underlay_under",
+                [
+                  "opt",
+                  "overlay!=0 && flags&16",
+                  "varushort"
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  }
+};
